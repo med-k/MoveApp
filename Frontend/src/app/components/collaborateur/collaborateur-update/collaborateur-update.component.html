@@ -1,0 +1,176 @@
+<div class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="title">Mise à jour</h5>
+        </div>
+        <div class="card-body">
+          <form #formulaire="ngForm">
+            <div class="row">
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Nom </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="nom"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.nom"
+                    #nom="ngModel"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 pl-md-1">
+                <div class="form-group">
+                  <label> Prenom </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="prenom"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.prenom"
+                    #prenom="ngModel"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 pr-md-1">
+                <div class="form-group">
+                  <label for="exampleInputEmail1"> Email</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.email"
+                    #email="ngModel"
+                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3 px-md-1">
+                <div class="form-group">
+                  <label> Numero Telephone </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="numTel"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.numTel"
+                    #numTel="ngModel"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4 pl-md-1">
+                <div class="form-group">
+                  <label> CIN </label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="cin"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.cin"
+                    #cin="ngModel"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Ville </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="ville"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.adresse.ville"
+                    #ville="ngModel"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Rue </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="rue"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.adresse.rue"
+                    #rue="ngModel"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Numero de Rue </label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="numRue"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.adresse.numRue"
+                    #numRue="ngModel"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Code Postale </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="codePostale"
+                    required
+                    *ngIf="c"
+                    [(ngModel)]="c.adresse.codePostale"
+                    #codePostale="ngModel"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Role </label>
+                  <input class="form-control" type="number" />
+                </div>
+              </div>
+              <div class="col-md-6 pr-md-1">
+                <div class="form-group">
+                  <label> Superviseur </label>
+                  <input class="form-control" type="text" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="card-footer">
+            <a routerLink="/admin/collaborateur">
+              <button
+                class="btn btn-danger"
+                [disabled]="formulaire.invalid"
+                type="submit"
+                (click)="Update(c)"
+              >
+                Save
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

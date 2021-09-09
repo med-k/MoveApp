@@ -1,0 +1,114 @@
+body {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  color: rgb(146, 10, 10);
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+  line-height: 70px;
+}
+.list-group-flush > .list-group-item {
+  padding-left: 22px;
+  line-height: 90px;
+  color: white;
+  border-top: 1px solid rgb(75, 75, 75);
+  border-bottom: 1px solid rgb(75, 75, 75);
+  color: white;
+}
+.list-group-flush > .list-group-item:hover {
+  padding-left: 70px;
+  transition: 0.4s;
+  color: rgb(146, 10, 10);
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.bg-light {
+  background-color: lightyellow !important;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    padding-right: 20px;
+    justify-content: flex-end;
+  }
+}
+.bg-light {
+  background-color: #262626 !important;
+}
+#page-content-wrapper {
+  background-image: url("../assets/112.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: "MorrisSansW01-Medium";
+  src: url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.eot");
+  src: url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a585f7ad0f298ebfbaf2fe75992dcd16.svg#MorrisSansW01-Medium")
+      format("svg");
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-family: MorrisSansW01-Medium;
+  margin-top: 7px;
+  margin-left: 20px;
+  color: white;
+}
+#sidebar-wrapper .sidebar-heading {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: MorrisSansW01-Medium;
+}
+a {
+  color: white;
+  text-decoration: none !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}

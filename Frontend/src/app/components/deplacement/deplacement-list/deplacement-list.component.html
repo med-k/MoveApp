@@ -1,0 +1,36 @@
+<div class="container bootstrap snippets bootdey">
+  <div class="table-responsive">
+    <!-- PROJECT TABLE -->
+    <table class="table colored-header datatable project-list">
+      <thead>
+        <tr>
+          <th>Collaborateur</th>
+          <th class="text-center">Ville Depart</th>
+          <th class="text-center">Ville Arrivee</th>
+          <th class="text-center">Date Depart</th>
+          <th class="text-center">Date Retour</th>
+          <th class="text-center">Etat</th>
+          <th>Notice</th>
+          <th class="text-center">Remuneration</th>
+          <th>Itineraire</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let d of Deplacements">
+        <tr>
+          <td>Collaborateur</td>
+          <td class="text-center">{{ d.villeDepart }}</td>
+          <td class="text-center">{{ d.villeArrivee }}</td>
+          <td class="text-center">{{ d.dateDepart }}</td>
+          <td class="text-center">{{ d.dateRetour }}</td>
+          <td class="text-center">{{ d.etat }}</td>
+          <td>{{ d.notice }}</td>
+          <td class="text-center">{{ d.remuneration }}</td>
+          <td>
+            <button class="btn-info" class="label label-default">More</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- END PROJECT TABLE -->
+  </div>
+</div>

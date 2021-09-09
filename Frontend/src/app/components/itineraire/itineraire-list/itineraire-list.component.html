@@ -1,0 +1,16 @@
+<div class="wp-block property list">
+  <h3>Liste Itineraire</h3>
+  <div class="wp-block-footer style2 mt-auto" *ngFor="let i of Itineraires">
+    <h4>Etape</h4>
+    <ul class="aux-info">
+      <li>{{ i.modeTransport }}</li>
+      <li><i class="fa fa-calendar"></i> {{ i.pointDepart }}</li>
+      <li><i class="fa fa-location-arrow"></i> {{ i.heureDepart }}</li>
+      <li><i class="fa fa-calendar"></i>{{ i.pointArrivee }}</li>
+      <li><i class="fa fa-home"></i>{{ i.heureArrivee }}</li>
+      <li>
+        <button class="btn-secondary">{{ i.billet }}</button>
+      </li>
+    </ul>
+  </div>
+</div>

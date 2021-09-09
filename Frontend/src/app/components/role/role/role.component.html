@@ -1,0 +1,39 @@
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron list-content">
+        <ul class="list-group">
+          <li class="list-group-item title">Liste des Roles</li>
+          <li
+            class="list-group-item text-left li-roles"
+            *ngFor="let r of Roles"
+          >
+            <label class="role-name"> {{ r.role }} </label>
+            <label class="role-price"> $ {{ r.frais }} </label>
+            <label>
+              <a class="table-link text-info">
+                <label class="fa-stack">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                </label>
+              </a>
+              <a class="table-link danger">
+                <label class="fa-stack">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
+                </label>
+              </a>
+            </label>
+          </li>
+          <li class="list-group-item text-right">
+            <button class="btn btn-info pull-right">Add new</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,50 @@
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  rel="stylesheet"
+/>
+<div class="container">
+  <div class="row p-1">
+    <div class="col-md-12">
+      <div class="row p-2">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </div>
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col-md-6">
+      <div class="wp-block property list">
+        <div class="wp-block-content clearfix">
+          <h4>Notice</h4>
+          <p class="description mb-15">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            maiores laborum neque beatae exercitationem quos repellat sint
+            velit.
+          </p>
+          <div class="remuneration">
+            <h4>Remuneration</h4>
+            <p class="price">$230</p>
+          </div>
+        </div>
+        <div class="wp-block-footer style2 mt-auto">
+          <h3>Depart</h3>
+          <ul class="aux-info">
+            <li><i class="fa fa-calendar"></i> aller</li>
+            <li><i class="fa fa-location-arrow"></i> date aller</li>
+          </ul>
+        </div>
+        <div class="wp-block-footer style2 mt-auto">
+          <h3>Retour</h3>
+          <ul class="aux-info">
+            <li><i class="fa fa-calendar"></i>retour</li>
+            <li><i class="fa fa-home"></i>date retour</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-itineraire-list></app-itineraire-list>
+    </div>
+  </div>
+</div>
